@@ -8,6 +8,9 @@ body {
 .display-flex {
   display: flex;
 }
+.column{
+  flex-direction: column;
+}
 .space-between {
   justify-content: space-between;
 }
@@ -42,12 +45,12 @@ header {
   display: none;
   color: white;
 }
-.gap-20 {
+.gap-20{
   gap: 20px;
 }
 .container {
   width: 100%;
-  padding-inline: 50px;
+  padding-inline: 30px;
 }
 .my-picture {
   width: 50%;
@@ -63,14 +66,10 @@ header {
 }
 .my-name {
   font-weight: 400px;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
+  color:white
 }
-.contact {
-  font-weight: 700px;
-  font-size: 16px;
-  line-height: 16px;
-  width: 60%;
-}
+
 .contact-icon {
   width: 2rem;
   height: 2rem;
@@ -82,17 +81,31 @@ header {
   flex: wrap;
 }
 .introduction {
-width: 50%;
-  color: white;
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
+  margin-right:5%;
 }
 .contact-me {
   background-color: #d3e97a;
   border-radius: 100px;
   padding: 10px 20px;
+}
+.about-me{
+  display:block
+}
+p{
+  color:#c7c7c7;
+  font-weight: 400;
+  font-size:1.1rem;
+  
+}
+h3{
+  color:#fff;
+  font-weight: 500;
+  font-size: 2rem;
 }
 /* footer */
 
@@ -109,6 +122,65 @@ main {
   footer {
     border: 4px solid white;
   }
+  .w50{
+    width: 50%;
+  }
+  .w45{
+    width: 45%;
+  }
+  .h50{
+    height: 50%;
+  }
+.relative{
+  position: relative;
+}
+.c-work{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 3;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color:white;
+  padding : 1%;
+  background-color: #0a0a0a;
+  margin-top:3%;
+  margin-left:3%;
+  text-align: center;
+  border-radius: 20px;
+}
+a{
+  color:#d3e97a;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.a-logo{
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.mobile-img{
+  display:none;
+  border-radius: 5%;
+  background-color: #1a1a1a
+}
+.note-img{
+  display:block;
+  width: 50%;
+  height: 100%;
+  background-color: #1a1a1a;
+  border-radius: 5%;
+}
+.project-info{
+  font-weight: 600;
+  font-size: 1rem;
+  color:#fff;
+}
+.project-type{
+  font-weight: 500;
+  font-size: 1rem;
+  color:#fff;
+}
 @media screen and (max-width: 600px) {
   .header-title {
     display: none;
@@ -131,13 +203,31 @@ main {
   }
   .introduction {
     width: 100%;
+    margin-bottom:10%;
   }
   .my-name {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
+  .about-me{
+    display:none
+  }
+  .w50{
+    width: 100%;
+  }
+  .w45{
+      width: 100%;
+  }
+  .mobile-img{
+    width: 100%;
+    display: block;
+  }
+  .note-img{
+    display:none;
+  }
+
 }
 
-@media screen and (min-width: 600px) and (max-width: 1223px) {
+/* @media screen and (min-width: 600px) and (max-width: 1223px) {
   body {
     background-color: gold;
   }
@@ -151,6 +241,6 @@ main {
   .my-name {
     font-size: 4rem;
   }
-}
+} */
 
 
