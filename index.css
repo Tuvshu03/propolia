@@ -19,10 +19,7 @@ body {
   justify-content: center;
 }
 .padding-16 {
-  padding: 16px;
-}
-header {
-  border: 4px solid red;
+  padding: 1rem;
 }
 
 .color-white {
@@ -46,7 +43,7 @@ header {
   color: white;
 }
 .gap-20{
-  gap: 20px;
+  gap: 1.3rem;
 }
 .container {
   width: 100%;
@@ -66,7 +63,7 @@ header {
 }
 .my-name {
   font-weight: 400px;
-  font-size: 4.5rem;
+  font-size: 4rem;
   color:white
 }
 
@@ -89,6 +86,7 @@ header {
   margin-right:5%;
 }
 .contact-me {
+  color:#0a0a0a;
   background-color: #d3e97a;
   border-radius: 100px;
   padding: 10px 20px;
@@ -96,32 +94,41 @@ header {
 .about-me{
   display:block
 }
+.width1{
+  width: 100px;
+}
 p{
   color:#c7c7c7;
   font-weight: 400;
   font-size:1.1rem;
   
 }
+.hr100{
+  width: 100%;
+  border-top: 1px solid #484848
+}
 h3{
   color:#fff;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.7rem;
+}
+.absolute{
+  position:absolute;
+  bottom:0;
 }
 /* footer */
 
 .resume-logo {
-  width: 2rem;
-  height: 2rem;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 input {
   background-color: #1a1a1a;
 }
-main {
-    border: 4px solid blue;
-  }
-  footer {
-    border: 4px solid white;
-  }
+ hr{
+  width: 100vw;
+  padding:0
+ }
   .w50{
     width: 50%;
   }
@@ -133,6 +140,13 @@ main {
   }
 .relative{
   position: relative;
+}
+.absolute{
+  position:absolute;
+  bottom: 0;
+}
+.margin-top{
+ margin-top:8%;
 }
 .c-work{
   position: absolute;
@@ -167,7 +181,6 @@ a{
 .note-img{
   display:block;
   width: 50%;
-  height: 100%;
   background-color: #1a1a1a;
   border-radius: 5%;
 }
@@ -180,6 +193,12 @@ a{
   font-weight: 500;
   font-size: 1rem;
   color:#fff;
+}
+.main-imgs{
+  width: 50%;
+  height: 100%;
+  background-color: #1a1a1a;
+  border-radius: 5%;
 }
 @media screen and (max-width: 600px) {
   .header-title {
@@ -223,6 +242,13 @@ a{
   }
   .note-img{
     display:none;
+  }
+  .main-imgs{
+    width: 100%;
+  }
+  .absolute{
+    bottom:-12%;
+    left: 0;
   }
 
 }
